@@ -1,0 +1,8 @@
+
+
+Versio minima de Android soportada: 
+
+ICE_CREAM_SANDWICH
+API : 14	
+Android: 4.0, 4.0.1 y 4.0.2
+
