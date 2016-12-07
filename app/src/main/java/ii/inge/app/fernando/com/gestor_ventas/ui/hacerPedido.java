@@ -87,6 +87,10 @@ public class hacerPedido extends AppCompatActivity {
 
         List<Producto> list = new ArrayList<>();
 
+        Producto productoVacio = new Producto("00","-Seleccione un Producto-",0,0);
+
+        list.add(0,productoVacio);
+
         Cursor cursorProductos = datos.obtenerProductos();
 
         while (cursorProductos.moveToNext()) {
@@ -150,6 +154,10 @@ public class hacerPedido extends AppCompatActivity {
 
     public void registrar(View vista){
 
+        if (selectedProducto.idProducto.equals("00")){
+            Toast.makeText(getApplicationContext(),"Seleccione un Producto!",Toast.LENGTH_LONG).show();
+            return;
+        }
 
         if(cantidad == 0){
             Toast.makeText(getApplicationContext(),"Ingrese una cantidad!",Toast.LENGTH_LONG).show();

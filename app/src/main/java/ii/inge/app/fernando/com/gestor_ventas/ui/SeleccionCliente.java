@@ -48,6 +48,10 @@ public class SeleccionCliente extends AppCompatActivity {
         spinnerClientes = (Spinner)findViewById(R.id.spn_clientes);
 
         List<Cliente> list = new ArrayList<>();
+        //Se crea un objeto cliente vacio
+        Cliente clienteVacio = new Cliente("00","-Selecione un Cliente-", "","", "");
+        //Se añade el cliente vacio a la lista como primer elemento
+        list.add(0,clienteVacio);
 
         Cursor cursorClientes = datos.obtenerClientes();
 
@@ -104,7 +108,7 @@ public class SeleccionCliente extends AppCompatActivity {
 
     public void Pedido(View vista){
 
-        if (selectedCliente == null){
+        if (selectedCliente.idCliente.equals("00")){
             Toast.makeText(getApplicationContext(),"Seleccione un Cliente!",Toast.LENGTH_LONG).show();
             return;
         }
