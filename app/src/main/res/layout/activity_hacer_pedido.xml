@@ -34,7 +34,7 @@
                 android:layout_height="match_parent"
                 android:id="@+id/spn_productos"
                 android:gravity="left"
-                android:layout_width="100dp" />
+                android:layout_width="match_parent" />
 
         </TableRow>
 
@@ -114,8 +114,10 @@
                 android:layout_height="50dp" />
 
             <NumberPicker
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
                 android:id="@+id/pick_cantidad"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="left"
                 android:layout_height="70dp" />
 
         </TableRow>
@@ -161,14 +163,6 @@
             <Space android:layout_height="40dp"
                 android:layout_width="95dp" />
 
-            <Button
-                android:text="Ver Pedidos"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:id="@+id/bt_verPedidos"
-                android:layout_gravity="center"
-                android:onClick="verListaPedidos"
-                android:textSize="12sp" />
         </TableRow>
 
         <TableRow
@@ -192,6 +186,16 @@
                 android:id="@+id/bt_atrasClientes"
                 android:layout_gravity="center_horizontal|fill_horizontal"
                 android:onClick="Atras"/>
+
+            <Button
+                android:text="Ver Pedidos"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/bt_verPedidos"
+                android:onClick="verListaPedidos"
+                android:textSize="12sp"
+                android:layout_gravity="left" />
+
         </TableRow>
     </TableLayout>
 
