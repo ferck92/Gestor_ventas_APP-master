@@ -10,6 +10,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ui.SeleccionCliente"
+            android:screenOrientation="portrait"
             android:label="Seleccionar Cliente">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
