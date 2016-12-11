@@ -49,7 +49,7 @@ public class SeleccionCliente extends AppCompatActivity {
 
         List<Cliente> list = new ArrayList<>();
         //Se crea un objeto cliente vacio
-        Cliente clienteVacio = new Cliente("00","-Selecione un Cliente-", "","", "");
+        Cliente clienteVacio = new Cliente("00","-Seleccione un Cliente-", "","", "");
         //Se añade el cliente vacio a la lista como primer elemento
         list.add(0,clienteVacio);
 
